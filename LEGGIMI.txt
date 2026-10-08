@@ -1,0 +1,39 @@
+SIGMA+ — NUOVO SITO (BOZZA STATICA)
+====================================
+
+Contenuto
+- index.html ............ Home
+- ChiSiamo.html ......... Chi siamo, Società Benefit, manifesto, team
+- Servizi.html .......... Servizi nelle tre sfere (filtro Ambiente / Sicurezza)
+- Sicurezza.html ........ Salute e sicurezza sul lavoro
+- ServizioAudit.html .... Scheda servizio tipo (Audit ambiente e sicurezza)
+- LaMappa.html .......... La mappa + autovalutazione in 6 domande
+- Settori.html .......... 8 settori con percorso per sfera
+- Risorse.html .......... Risorse con filtri
+- News.html ............. News con filtri + iscrizione newsletter
+- Articolo.html ......... Articolo tipo (PPWR)
+- Contatti.html ......... Form contatti
+- assets/ ............... immagini e dc-lite.js (piccolo script per le parti interattive)
+
+Come provarlo
+1. In locale: apri la cartella e lancia
+     python3 -m http.server 8000
+   poi vai su http://localhost:8000
+   (aprendo i file con doppio clic funziona quasi tutto, ma un server locale è più fedele).
+2. Online, senza costi: trascina l'intera cartella su Netlify Drop (app.netlify.com/drop),
+   oppure caricala su GitHub Pages, Cloudflare Pages o Vercel. In alternativa, carica tutto
+   via FTP nella root (o in una sottocartella) del tuo hosting attuale.
+   Non serve database né PHP: sono solo file HTML.
+
+Cosa NON fa ancora (da sviluppare prima della messa online definitiva)
+- Il form contatti e la newsletter verificano i campi ma NON inviano email:
+  vanno collegati a un servizio (es. Netlify Forms, Formspree, il CRM o il server di posta)
+  con protezione anti-spam (reCAPTCHA / Cloudflare Turnstile).
+- Privacy policy, cookie policy e banner cookie sono solo link segnaposto.
+- Il font Schibsted Grotesk si carica da Google Fonts: per il GDPR conviene ospitarlo
+  in locale nella versione definitiva (o sostituirlo con il font del Brand Book).
+- Le news, le date, il team e i dati societari tra [parentesi quadre] sono segnaposto.
+- L'illustrazione del fiume è provvisoria: sostituire i file assets/hero-*.jpg
+  con la foto aerea istituzionale mantenendo gli stessi nomi.
+- Per mettere il sito in produzione si consiglia di ricostruirlo nel CMS scelto
+  (es. WordPress) usando queste pagine come riferimento di layout e testi.
