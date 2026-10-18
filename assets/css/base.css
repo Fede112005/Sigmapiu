@@ -1,0 +1,15 @@
+body{margin:0;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:#106B2D}a:hover{color:#005423}
+input,select,textarea,button{font-family:inherit}
+label{min-width:0}
+label>select{width:100%;max-width:100%;min-width:0}
+:focus-visible{outline:3px solid #015FC2;outline-offset:2px}
+[id]{scroll-margin-top:24px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hp-field{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.faq summary{list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:24px;color:#015FC2;flex:none}
+.faq[open] summary::after{content:"\2212"}
+@media (prefers-reduced-motion: reduce){*{transition:none !important;scroll-behavior:auto !important}}
