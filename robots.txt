@@ -1,0 +1,6 @@
+# Sigma+ — robots.txt
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://www.sigmapiu.it/sitemap.xml
