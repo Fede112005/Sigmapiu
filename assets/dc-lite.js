@@ -1,4 +1,6 @@
-/* dc-lite: runtime minimo per le pagine Sigma+ (holes, sc-for, sc-if, eventi) */
+/* dc-lite: runtime minimo per le pagine Sigma+ (holes, sc-for, sc-if, eventi).
+   Il modello sta in <script type="text/x-template" id="dc-template">; il contenuto iniziale
+   e' gia' pre-renderizzato in #dc-root. Nessun innerHTML su dati utente: solo nodi di testo e setAttribute. */
 (function () {
   function DCLogic(props) { this.props = props || {}; this.state = {}; }
   DCLogic.prototype.setState = function (o) { Object.assign(this.state, typeof o === 'function' ? o(this.state) : o); if (!window.__dcSilent) window.__dcRender(); };
@@ -41,7 +43,8 @@
   }
   function kids(node, scope, out) { Array.prototype.forEach.call(node.childNodes, function (c) { build(c, scope, out); }); }
   document.addEventListener('DOMContentLoaded', function () {
-    var tpl = document.getElementById('dc-template'), root = document.getElementById('dc-root');
+    var src = document.getElementById('dc-template'), root = document.getElementById('dc-root'), tpl = src;
+    if (!src.content) { tpl = document.createElement('template'); tpl.innerHTML = src.textContent; }
     var comp = new window.Component({});
     window.__dcRender = function () {
       var y = window.scrollY, frag = document.createDocumentFragment();
