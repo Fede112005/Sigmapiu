@@ -3,207 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Audit ambientale e simulazione di ispezione | Sigma+</title>
-<meta name="description" content="Audit ambientale Sigma+: verifichiamo autorizzazioni, rifiuti, emissioni e scarichi e restituiamo al management priorità e piano d&#x27;azione.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://www.sigmapiu.it/ServizioAudit.html">
-<meta name="theme-color" content="#06331B">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Sigma+">
-<meta property="og:locale" content="it_IT">
-<meta property="og:title" content="Audit ambientale e simulazione di ispezione | Sigma+">
-<meta property="og:description" content="Audit ambientale Sigma+: verifichiamo autorizzazioni, rifiuti, emissioni e scarichi e restituiamo al management priorità e piano d&#x27;azione.">
-<meta property="og:url" content="https://www.sigmapiu.it/ServizioAudit.html">
-<meta property="og:image" content="https://www.sigmapiu.it/assets/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="stylesheet" href="assets/css/base.css">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "ProfessionalService",
-   "@id": "https://www.sigmapiu.it/#organizzazione",
-   "name": "Sigma+",
-   "alternateName": "Sigma Più Società Benefit",
-   "description": "Società Benefit di consulenza ambientale: dalla conformità alla strategia.",
-   "slogan": "Dalla conformità alla strategia.",
-   "url": "https://www.sigmapiu.it/",
-   "logo": "https://www.sigmapiu.it/assets/simbolo.png",
-   "image": "https://www.sigmapiu.it/assets/og-image.jpg",
-   "telephone": "+39 371 756 8232",
-   "email": "info@sigmapiu.it",
-   "vatID": "IT02728710209",
-   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Via Albere, 80c",
-    "postalCode": "37138",
-    "addressLocality": "Verona",
-    "addressRegion": "VR",
-    "addressCountry": "IT"
-   },
-   "knowsAbout": [
-    "Autorizzazioni ambientali",
-    "Gestione dei rifiuti",
-    "RENTRI",
-    "Audit ambientale",
-    "Monitoraggi ambientali",
-    "ISO 14001",
-    "Reporting di sostenibilità",
-    "LCA e carbon footprint"
-   ]
-  },
-  {
-   "@type": "WebSite",
-   "@id": "https://www.sigmapiu.it/#sito",
-   "url": "https://www.sigmapiu.it/",
-   "name": "Sigma+",
-   "inLanguage": "it-IT",
-   "publisher": {
-    "@id": "https://www.sigmapiu.it/#organizzazione"
-   }
-  },
-  {
-   "@type": "WebPage",
-   "@id": "https://www.sigmapiu.it/ServizioAudit.html#pagina",
-   "url": "https://www.sigmapiu.it/ServizioAudit.html",
-   "name": "Audit ambientale e simulazione di ispezione | Sigma+",
-   "description": "Audit ambientale Sigma+: verifichiamo autorizzazioni, rifiuti, emissioni e scarichi e restituiamo al management priorità e piano d'azione.",
-   "inLanguage": "it-IT",
-   "isPartOf": {
-    "@id": "https://www.sigmapiu.it/#sito"
-   },
-   "about": {
-    "@id": "https://www.sigmapiu.it/#organizzazione"
-   },
-   "primaryImageOfPage": {
-    "@type": "ImageObject",
-    "url": "https://www.sigmapiu.it/assets/hero-servizi.jpg"
-   },
-   "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.sigmapiu.it/"
-     },
-     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Servizi",
-      "item": "https://www.sigmapiu.it/Servizi.html"
-     },
-     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Audit ambientale",
-      "item": "https://www.sigmapiu.it/ServizioAudit.html"
-     }
-    ]
-   }
-  },
-  {
-   "@type": "Service",
-   "@id": "https://www.sigmapiu.it/ServizioAudit.html#servizio",
-   "name": "Audit ambientale",
-   "serviceType": "Audit ambientale",
-   "description": "Verifica del livello di conformità ambientale dell'organizzazione con report per il management, matrice delle priorità e piano d'azione.",
-   "provider": {
-    "@id": "https://www.sigmapiu.it/#organizzazione"
-   },
-   "url": "https://www.sigmapiu.it/ServizioAudit.html"
-  },
-  {
-   "@type": "FAQPage",
-   "@id": "https://www.sigmapiu.it/ServizioAudit.html#faq",
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Quanto dura un audit?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Dipende dalla complessità dell'organizzazione: numero di siti, attività e processi inclusi. La definiamo nel kick-off, dopo un primo esame della documentazione."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Serve fermare la produzione?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "No. Sopralluoghi e interviste si pianificano con i responsabili per non interferire con l'operatività."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Cosa succede se emergono non conformità?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Le classifichiamo per gravità e urgenza e le traduciamo in un piano d'azione con responsabili e tempi. Se serve, ti accompagniamo nella risoluzione."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "L'audit vale come certificazione?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "No. L'audit ambientale è una verifica finalizzata a valutare il livello di conformità dell'organizzazione rispetto agli obblighi applicabili e a individuare le opportunità di miglioramento. Non sostituisce una certificazione, ma può contribuire alla preparazione per un audit ISO 14001."
-     }
-    }
-   ]
-  }
- ]
-}
-</script>
+<title>Sigma+ — Audit ambientale</title>
+<meta name="description" content="Sigma+ Società Benefit: consulenza ambientale per medie e grandi imprese. Dalla conformità alla strategia.">
+<link rel="icon" href="assets/simbolo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:#106B2D}a:hover{color:#005423}
+input,select,textarea,button{font-family:inherit}
+:focus-visible{outline:3px solid #015FC2;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{transition:none !important}}
+</style>
 </head>
 <body>
+<div id="dc-root"></div>
+<template id="dc-template">
 <div style="font-family: 'Schibsted Grotesk', 'Helvetica Neue', Helvetica, sans-serif; color: #10251A; background: #FFFFFF; min-height: 100vh">
 <header style="background: #06331B; color: #FFFFFF">
 <div style="max-width: 1240px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px">
 <a href="index.html" aria-label="Sigma+ Società Benefit, home" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF; min-height: 56px">
-<img src="assets/simbolo-sm.png" alt="" width="46" height="40" style="width: 46px; height: 40px; object-fit: contain">
+<img src="assets/simbolo.png" alt="" style="width: 46px; height: 40px; object-fit: contain">
 <span style="display: flex; flex-direction: column; line-height: 1"><span style="font-size: 25px; font-weight: 800; letter-spacing: -0.02em">Sigma+</span><span style="font-size: 12px; font-weight: 500; color: #9BD4B3; margin-top: 5px">Società Benefit</span></span>
 </a>
 <nav aria-label="Menu principale" style="display: flex; flex-wrap: wrap; gap: 0 24px; flex: 1 1 480px; justify-content: center">
 <a href="ChiSiamo.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #D3E6DA">Chi siamo</a>
-<a href="Servizi.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; box-shadow: inset 0 -2px 0 #9BD4B3" aria-current="true">Servizi</a>
+<a href="Servizi.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; box-shadow: inset 0 -2px 0 #9BD4B3" aria-current="page">Servizi</a>
 <a href="LaMappa.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #D3E6DA">La mappa</a>
 <a href="Settori.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #D3E6DA">Settori</a>
-<a href="Risorse.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #D3E6DA">Risorse</a>
-<a href="News.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #D3E6DA">News</a>
 <a href="Contatti.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-decoration: none; color: #D3E6DA">Contatti</a>
 </nav>
 <a href="Contatti.html" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #106B2D; color: #FFFFFF; font-weight: 700; font-size: 16px; text-decoration: none; border: 0; cursor: pointer; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Helvetica, sans-serif; min-height: 44px; padding: 0 18px; font-size: 15px; border: 1px solid #2F8A4C">Parla con un consulente</a>
 </div>
 </header>
 <section style="position: relative; background: #0B3019; overflow: hidden">
-<img src="assets/hero-servizi.jpg" alt="Illustrazione di un fiume che attraversa un territorio boscato, visto dall'alto" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% center">
+<img src="assets/hero-servizi.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% center">
 <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 48px 24px 80px">
-<nav aria-label="Briciole di pane" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; color: #CFE3D6; margin-bottom: 22px"><a href="index.html" style="color: #CFE3D6; text-decoration: none">Home</a><span aria-hidden="true">/</span><a href="Servizi.html" style="color: #CFE3D6; text-decoration: none">Servizi</a><span aria-hidden="true">/</span><span style="color: #FFFFFF" aria-current="page">Audit ambientale</span></nav>
+<nav aria-label="Percorso" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; color: #CFE3D6; margin-bottom: 22px"><a href="index.html" style="color: #CFE3D6; text-decoration: none">Home</a><span aria-hidden="true">/</span><a href="Servizi.html" style="color: #CFE3D6; text-decoration: none">Servizi</a><span aria-hidden="true">/</span><span style="color: #FFFFFF">Audit ambientale</span></nav>
 <h1 style="margin: 0; font-size: clamp(38px, 5.2vw, 64px); line-height: 1.03; font-weight: 800; letter-spacing: -0.03em; color: #FFFFFF; max-width: 780px">Audit ambientale.</h1>
-<p style="margin: 22px 0 0; font-size: 20px; line-height: 1.5; color: #E4EFE8; max-width: 620px">Una fotografia verificabile del tuo livello di presidio: cosa è in regola, cosa non lo è, cosa sapresti dimostrare domani.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 28px"><span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: #014C9B; background: #EAF2FC; border: 1px solid #CBDDF5; padding: 4px 10px 4px 6px; border-radius: 999px"><img loading="lazy" decoding="async" src="assets/sfera-b.png" alt="" style="width: 16px; height: 16px">Controllo</span><span style="font-size: 15px; color: #E4EFE8">Sfera Controllo: comprendere e governare</span></div>
+<p style="margin: 22px 0 0; font-size: 20px; line-height: 1.5; color: #E4EFE8; max-width: 620px">Una fotografia verificabile del tuo livello di conformità: cosa è in regola, cosa non lo è, cosa sapresti dimostrare domani.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 28px"><span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: #014C9B; background: #EAF2FC; border: 1px solid #CBDDF5; padding: 4px 10px 4px 6px; border-radius: 999px"><img src="assets/sfera-b.png" alt="" style="width: 16px; height: 16px">Controllo</span><span style="font-size: 15px; color: #E4EFE8">Tappa Controllo: comprendere e governare</span></div>
 </div>
 </section>
 <section style="padding: 88px 24px">
 <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 18px"><h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; font-weight: 800; letter-spacing: -0.022em; color: #10251A">Cosa verifichiamo</h2><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #33463A">Partiamo dalle attività reali dell'azienda, non da una lista generica. Verifichiamo documenti, impianti e comportamenti, e incrociamo ciò che è scritto con ciò che accade. Per prepararti puoi usare la nostra <a href="Risorse.html">checklist di preparazione a un'ispezione ambientale</a>.</p><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Autorizzazioni, prescrizioni e loro rispetto</span></li>
+<div style="display: flex; flex-direction: column; gap: 18px"><h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; font-weight: 800; letter-spacing: -0.022em; color: #10251A">Cosa verifichiamo</h2><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #33463A">Partiamo dalle attività reali dell'azienda, non da una lista generica. Verifichiamo documenti, impianti e comportamenti, e incrociamo ciò che è scritto con ciò che accade.</p><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Autorizzazioni, prescrizioni e loro rispetto</span></li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Gestione rifiuti: classificazione, deposito, registri, FIR, RENTRI</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Emissioni, scarichi, rumore ambientale e monitoraggi</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Nomine, deleghe e procedure in ambito ambientale</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Emissioni, scarichi, rumore e monitoraggi</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Responsabilità interne, deleghe e formazione ambientale</span></li>
 </ul></div>
-<div style="display: flex; flex-direction: column; gap: 18px; padding: 32px; border-radius: 18px; background: #EAF2FC; border: 1px solid #CBDDF5"><h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; font-weight: 800; letter-spacing: -0.022em; color: #10251A; font-size: 32px">Cosa ricevi</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Un report leggibile dal management, con il livello di presidio per area</span></li>
+<div style="display: flex; flex-direction: column; gap: 18px; padding: 32px; border-radius: 18px; background: #EAF2FC; border: 1px solid #CBDDF5"><h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; font-weight: 800; letter-spacing: -0.022em; color: #10251A; font-size: 32px">Cosa ricevi</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Un report leggibile dal management, con il livello di conformità per area</span></li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>La matrice delle priorità: gravità, probabilità, urgenza</span></li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Il piano d'azione con responsabili, tempi e costi indicativi</span></li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.45; color: #33463A"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: #015FC2; margin-top: 8px"></span><span>Lo scadenzario degli adempimenti aggiornato</span></li>
@@ -215,7 +66,7 @@
 <div style="max-width: 1240px; margin: 0 auto">
 <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; font-weight: 800; letter-spacing: -0.022em; color: #10251A">Come si svolge</h2>
 <ol style="margin: 36px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 16px"><li style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE5DF"><span style="font-size: 15px; font-weight: 700; color: #015FC2">Fase 1</span><p style="margin: 0; font-size: 20px; font-weight: 800; color: #10251A">Kick-off</p><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #52645A">Perimetro, siti, ambiti e referenti. Raccogliamo la documentazione disponibile.</p></li>
-<li style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE5DF"><span style="font-size: 15px; font-weight: 700; color: #015FC2">Fase 2</span><p style="margin: 0; font-size: 20px; font-weight: 800; color: #10251A">Analisi documentale</p><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #52645A">Verifichiamo autorizzazioni ambientali, prescrizioni, registri, formulari, documentazione tecnica e procedure interne, individuando eventuali carenze e non conformità.</p></li>
+<li style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE5DF"><span style="font-size: 15px; font-weight: 700; color: #015FC2">Fase 2</span><p style="margin: 0; font-size: 20px; font-weight: 800; color: #10251A">Analisi documentale</p><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #52645A">Autorizzazioni, registri, deleghe, contratti: cosa c'è e cosa manca.</p></li>
 <li style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE5DF"><span style="font-size: 15px; font-weight: 700; color: #015FC2">Fase 3</span><p style="margin: 0; font-size: 20px; font-weight: 800; color: #10251A">Sopralluogo e interviste</p><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #52645A">Verifichiamo sul campo e con le persone che gestiscono i processi.</p></li>
 <li style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE5DF"><span style="font-size: 15px; font-weight: 700; color: #015FC2">Fase 4</span><p style="margin: 0; font-size: 20px; font-weight: 800; color: #10251A">Restituzione</p><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #52645A">Report, priorità e piano d'azione condivisi con il management.</p></li>
 </ol>
@@ -224,10 +75,7 @@
 <section style="padding: 88px 24px">
 <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px 72px">
 <div style="flex: 1 1 320px"><h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; font-weight: 800; letter-spacing: -0.022em; color: #10251A">Domande frequenti</h2><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #33463A; margin-top: 16px">Non trovi la risposta? Scrivici: ti risponde un consulente.</p></div>
-<div style="flex: 2 1 520px; display: flex; flex-direction: column; gap: 10px"><details class="faq" open style="border: 1px solid #DCE5DF; border-radius: 14px; background: #FFFFFF"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; padding: 0 22px; cursor: pointer; font-size: 18px; font-weight: 700; color: #10251A">Quanto dura un audit?</summary><p style="margin: 0; padding: 0 22px 22px; font-size: 16px; line-height: 1.6; color: #33463A">Dipende dalla complessità dell'organizzazione: numero di siti, attività e processi inclusi. La definiamo nel kick-off, dopo un primo esame della documentazione.</p></details>
-<details class="faq" style="border: 1px solid #DCE5DF; border-radius: 14px; background: #FFFFFF"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; padding: 0 22px; cursor: pointer; font-size: 18px; font-weight: 700; color: #10251A">Serve fermare la produzione?</summary><p style="margin: 0; padding: 0 22px 22px; font-size: 16px; line-height: 1.6; color: #33463A">No. Sopralluoghi e interviste si pianificano con i responsabili per non interferire con l'operatività.</p></details>
-<details class="faq" style="border: 1px solid #DCE5DF; border-radius: 14px; background: #FFFFFF"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; padding: 0 22px; cursor: pointer; font-size: 18px; font-weight: 700; color: #10251A">Cosa succede se emergono non conformità?</summary><p style="margin: 0; padding: 0 22px 22px; font-size: 16px; line-height: 1.6; color: #33463A">Le classifichiamo per gravità e urgenza e le traduciamo in un piano d'azione con responsabili e tempi. Se serve, ti accompagniamo nella risoluzione.</p></details>
-<details class="faq" style="border: 1px solid #DCE5DF; border-radius: 14px; background: #FFFFFF"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; padding: 0 22px; cursor: pointer; font-size: 18px; font-weight: 700; color: #10251A">L'audit vale come certificazione?</summary><p style="margin: 0; padding: 0 22px 22px; font-size: 16px; line-height: 1.6; color: #33463A">No. L'audit ambientale è una verifica finalizzata a valutare il livello di conformità dell'organizzazione rispetto agli obblighi applicabili e a individuare le opportunità di miglioramento. Non sostituisce una certificazione, ma può contribuire alla preparazione per un audit ISO 14001.</p></details></div>
+<div style="flex: 2 1 520px; display: flex; flex-direction: column; gap: 10px"><sc-for list="{{ faqs }}" as="f" hint-placeholder-count="4"><div style="border: 1px solid #DCE5DF; border-radius: 14px; background: #FFFFFF"><button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.expanded }}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; padding: 0 22px; background: transparent; border: 0; cursor: pointer; text-align: left; font-size: 18px; font-weight: 700; color: #10251A">{{ f.q }}<span aria-hidden="true" style="font-size: 24px; color: #015FC2">{{ f.sign }}</span></button><sc-if value="{{ f.isOpen }}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 0 22px 22px; font-size: 16px; line-height: 1.6; color: #33463A">{{ f.a }}</p></sc-if></div></sc-for></div>
 </div>
 </section>
 <section style="background: #06331B; padding: 80px 24px">
@@ -243,21 +91,38 @@
 <div style="max-width: 1240px; margin: 0 auto">
 <div style="display: flex; flex-wrap: wrap; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 14px; flex: 2 1 300px">
-<div style="display: flex; align-items: center; gap: 12px"><img src="assets/simbolo-sm.png" alt="" width="46" height="40" style="width: 46px; height: 40px; object-fit: contain"><span style="font-size: 25px; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em">Sigma+</span></div>
+<div style="display: flex; align-items: center; gap: 12px"><img src="assets/simbolo.png" alt="" style="width: 46px; height: 40px; object-fit: contain"><span style="font-size: 25px; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em">Sigma+</span></div>
 <p style="margin: 0; font-size: 20px; font-weight: 700; color: #FFFFFF">Dalla conformità alla strategia.</p>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 340px">Consulenza ambientale dalla conformità alla strategia.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 340px">Consulenza ambientale. Società Benefit.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.7">Via Albere, 80c, 37138 Verona<br><a href="tel:+393717568232" style="color: #FFFFFF">+39 371 756 8232</a><br><a href="mailto:info@sigmapiu.it" style="color: #FFFFFF">info@sigmapiu.it</a></p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 180px"><p style="margin: 0 0 6px; font-size: 15px; font-weight: 700; color: #FFFFFF">La mappa</p><a href="LaMappa.html#conformita" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Conformità</a><a href="LaMappa.html#controllo" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Controllo</a><a href="LaMappa.html#strategia" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Strategia</a><a href="LaMappa.html#posizione" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Scopri la tua posizione</a></div>
-<div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 180px"><p style="margin: 0 0 6px; font-size: 15px; font-weight: 700; color: #FFFFFF">Servizi</p><a href="Servizi.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Tutti i servizi</a><a href="ServizioAudit.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Audit ambientale</a><a href="Servizi.html#consulenza-continuativa" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Consulenza continuativa</a></div>
-<div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 180px"><p style="margin: 0 0 6px; font-size: 15px; font-weight: 700; color: #FFFFFF">Sigma+</p><a href="ChiSiamo.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Chi siamo</a><a href="ChiSiamo.html#manifesto" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Manifesto</a><a href="Settori.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Settori</a><a href="Risorse.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Risorse</a><a href="News.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">News</a><a href="Contatti.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Contatti</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 180px"><p style="margin: 0 0 6px; font-size: 15px; font-weight: 700; color: #FFFFFF">La mappa</p><a href="LaMappa.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Conformità</a><a href="LaMappa.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Controllo</a><a href="LaMappa.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Strategia</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 180px"><p style="margin: 0 0 6px; font-size: 15px; font-weight: 700; color: #FFFFFF">Servizi</p><a href="Servizi.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Tutti i servizi</a><a href="ServizioAudit.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Audit ambientale</a><a href="Servizi.html#assistenza-continuativa" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Assistenza ambientale continuativa</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 180px"><p style="margin: 0 0 6px; font-size: 15px; font-weight: 700; color: #FFFFFF">Sigma+</p><a href="ChiSiamo.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Chi siamo</a><a href="ChiSiamo.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Manifesto</a><a href="Settori.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Settori</a><a href="Contatti.html" style="color: #D3E6DA; text-decoration: none; font-size: 15px; min-height: 28px; display: inline-flex; align-items: center">Contatti</a></div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; margin-top: 48px; padding-top: 24px; border-top: 1px solid #1D4A30; font-size: 13px; color: #B9D2C2">
-<span>© 2026 Sigma+ Società Benefit. P.IVA 02728710209</span>
-<span style="display: flex; flex-wrap: wrap; gap: 4px 18px"><a href="#" style="color: #B9D2C2">Privacy policy</a><a href="#" style="color: #B9D2C2">Cookie policy</a><a href="#" style="color: #B9D2C2">Preferenze cookie</a><a href="#" style="color: #B9D2C2">Relazione di impatto</a><a href="#" style="color: #B9D2C2">LinkedIn</a></span>
+<span>© 2026 Sigma+ S.R.L. Società Benefit. P.IVA 02728710209</span>
+<span style="display: flex; flex-wrap: wrap; gap: 4px 18px"><a href="#" style="color: #B9D2C2">Privacy policy</a><a href="#" style="color: #B9D2C2">Cookie policy</a><a href="#" style="color: #B9D2C2">Preferenze cookie</a><a href="assets/Relazione_Impatto_Sigma_2025.pdf" style="color: #B9D2C2">Relazione di impatto 2025</a></span>
 </div>
 </div>
 </footer>
 </div>
+</template>
+<noscript>Questa pagina richiede JavaScript per i contenuti interattivi.</noscript>
+<script src="assets/dc-lite.js"></script>
+<script>
+window.Component = class extends DCLogic {
+  constructor(p){ super(p); this.state = { open: 0 }; }
+  renderVals() {
+    const faqs = [
+      ['Quanto dura un audit?', 'Dipende da numero di siti, attività e ambiti inclusi. Lo definiamo nel kick-off, dopo un primo esame della documentazione.'],
+      ['Serve fermare la produzione?', 'No. Sopralluoghi e interviste si pianificano con i responsabili per non interferire con l\'operatività.'],
+      ['Cosa succede se emergono non conformità?', 'Le classifichiamo per gravità e urgenza e le traduciamo in un piano d\'azione con responsabili e tempi. Se serve, ti accompagniamo nella risoluzione.'],
+      ['L\'audit vale come certificazione?', 'No: è una verifica di parte seconda. Prepara però in modo concreto a una certificazione ISO 14001 e a eventuali ispezioni.']
+    ];
+    return { faqs: faqs.map(([q,a], i) => ({ q, a, isOpen: this.state.open === i, expanded: this.state.open === i ? 'true' : 'false', sign: this.state.open === i ? '−' : '+', toggle: () => this.setState({ open: this.state.open === i ? -1 : i }) })) };
+  }
+}
+</script>
 </body>
 </html>
